@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OneViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    OneViewController *oneVc = [OneViewController new];
+    self.window.rootViewController = oneVc;
+    [self.window  makeKeyAndVisible];
+    
     return YES;
 }
 
