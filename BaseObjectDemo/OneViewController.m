@@ -18,6 +18,7 @@
 #import "UIImage+ImageEffects.h"
 #import "UIImage+SolidColor.h"
 #import "UIImage+Blend.h"
+#import "UIView+UserInteraction.h"
 
 @interface OneViewController ()
 
@@ -39,11 +40,11 @@
     
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeSystem];
     [btn2 setNormalTitleColor:[UIColor blackColor]];
-    [btn2 setNormalTitle:@"是我"];
+    [btn2 setNormalTitle:@"我被禁止交互了"];
     [btn2 blockEvent:^(UIButton *button) {
         NSLog(@"嗯，是你");
     }];
-    btn2.frame = CGRectMake(50, 140, 80, 50);
+    btn2.frame = CGRectMake(50, 140, 200, 50);
     
     CAShapeLayer *cornerLayer = [CAShapeLayer shapeLayerWithFrame:CGRectMake(0, 0, 80, 50) corners:UIRectCornerTopLeft | UIRectCornerBottomRight radius:30];
     cornerLayer.fillColor = [UIColor greenColor].CGColor;
@@ -83,8 +84,10 @@
     btn3.frame = CGRectMake(160, 80, 50, 50);
     // 改变颜色
     [btn3 setNormalImage:[[UIImage imageNamed:@"模特"] imageWithTintColor:[UIColor purpleColor]]];
-    
-    
+    // 禁止掉btn2 的交互通过view的分类
+//    [btn2 disableUserInteraction];
+    // 禁止self.view的交互
+//    [self.view disableUserInteraction];
     [self.view addSubview:imgv];
 //    [self.view addSubview:imgv1];
 //    [self.view addSubview:imgv2];
