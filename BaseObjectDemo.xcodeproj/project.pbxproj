@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00712E822687013009C3D5F /* UIView+ScreensShot.m in Sources */ = {isa = PBXBuildFile; fileRef = F00712E722687013009C3D5F /* UIView+ScreensShot.m */; };
+		F00712EB226870DE009C3D5F /* UIView+UserInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = F00712EA226870DE009C3D5F /* UIView+UserInteraction.m */; };
 		F01CB5C52265A77E00FA55BE /* NSString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */; };
 		F01CB5CB2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CA2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m */; };
 		F01CB5CE2265B45800FA55BE /* NSString+HexUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CD2265B45800FA55BE /* NSString+HexUnicode.m */; };
@@ -52,6 +54,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F00712E622687013009C3D5F /* UIView+ScreensShot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ScreensShot.h"; sourceTree = "<group>"; };
+		F00712E722687013009C3D5F /* UIView+ScreensShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ScreensShot.m"; sourceTree = "<group>"; };
+		F00712E9226870DE009C3D5F /* UIView+UserInteraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+UserInteraction.h"; sourceTree = "<group>"; };
+		F00712EA226870DE009C3D5F /* UIView+UserInteraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+UserInteraction.m"; sourceTree = "<group>"; };
 		F01CB5C32265A77E00FA55BE /* NSString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
 		F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LabelWidthAndHeight.m"; sourceTree = "<group>"; };
 		F01CB5C92265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
@@ -412,6 +418,10 @@
 			children = (
 				F09606B3226096C200740E18 /* UIView+SetRect.h */,
 				F09606B4226096C200740E18 /* UIView+SetRect.m */,
+				F00712E622687013009C3D5F /* UIView+ScreensShot.h */,
+				F00712E722687013009C3D5F /* UIView+ScreensShot.m */,
+				F00712E9226870DE009C3D5F /* UIView+UserInteraction.h */,
+				F00712EA226870DE009C3D5F /* UIView+UserInteraction.m */,
 			);
 			name = "UIView+Category";
 			sourceTree = "<group>";
@@ -528,6 +538,7 @@
 				F09606BD22609ADA00740E18 /* HexColors.m in Sources */,
 				F096067522601FA800740E18 /* GCDQueue.m in Sources */,
 				F096069E226067FD00740E18 /* CAShapeLayer+CornerRadius.m in Sources */,
+				F00712EB226870DE009C3D5F /* UIView+UserInteraction.m in Sources */,
 				F09606B92260989000740E18 /* UIFont+Fonts.m in Sources */,
 				F01CB5CB2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m in Sources */,
 				F096069222605DB000740E18 /* btnitemStyle.m in Sources */,
@@ -539,6 +550,7 @@
 				F096067222601FA800740E18 /* GCDTimer.m in Sources */,
 				F0960681226036F200740E18 /* NSObject+WeakList.m in Sources */,
 				F0398CCB225F116C009B668F /* BaseCustomViewController.m in Sources */,
+				F00712E822687013009C3D5F /* UIView+ScreensShot.m in Sources */,
 				F0960682226036F200740E18 /* NSObject+PropertiesInfomation.m in Sources */,
 				F096069A2260655600740E18 /* UIViewController+Status.m in Sources */,
 				F0398CAC225F0E04009B668F /* AppDelegate.m in Sources */,
