@@ -19,6 +19,7 @@
 #import "UIImage+SolidColor.h"
 #import "UIImage+Blend.h"
 #import "UIView+UserInteraction.h"
+#import "UIView+GlowView.h"
 
 @interface OneViewController ()
 
@@ -95,6 +96,17 @@
     [self.view addSubview:btn2];
     [self.view addSubview:btn3];
     [self.view addSubview:label];
+    // 添加辉光
+    label.glowRadius            = @(2.f);
+    label.glowOpacity           = @(0.75f);
+    label.glowColor             = [[UIColor redColor] colorWithAlphaComponent:1.f];
+    
+    label.glowDuration          = @(1.f);
+    label.hideDuration          = @(1.f);
+    label.glowAnimationDuration = @(1.f);
+    [label createGlowLayer];
+    [label insertGlowLayer];
+    [label startGlowLoop];
 }
 
 

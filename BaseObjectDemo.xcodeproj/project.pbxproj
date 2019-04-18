@@ -10,6 +10,7 @@
 		F00712E822687013009C3D5F /* UIView+ScreensShot.m in Sources */ = {isa = PBXBuildFile; fileRef = F00712E722687013009C3D5F /* UIView+ScreensShot.m */; };
 		F00712EB226870DE009C3D5F /* UIView+UserInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = F00712EA226870DE009C3D5F /* UIView+UserInteraction.m */; };
 		F00712EE2268738E009C3D5F /* UIView+AnimationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = F00712ED2268738E009C3D5F /* UIView+AnimationProperty.m */; };
+		F00712F122687785009C3D5F /* UIView+GlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F00712F022687785009C3D5F /* UIView+GlowView.m */; };
 		F01CB5C52265A77E00FA55BE /* NSString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */; };
 		F01CB5CB2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CA2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m */; };
 		F01CB5CE2265B45800FA55BE /* NSString+HexUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CD2265B45800FA55BE /* NSString+HexUnicode.m */; };
@@ -61,6 +62,8 @@
 		F00712EA226870DE009C3D5F /* UIView+UserInteraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+UserInteraction.m"; sourceTree = "<group>"; };
 		F00712EC2268738E009C3D5F /* UIView+AnimationProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationProperty.h"; sourceTree = "<group>"; };
 		F00712ED2268738E009C3D5F /* UIView+AnimationProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationProperty.m"; sourceTree = "<group>"; };
+		F00712EF22687785009C3D5F /* UIView+GlowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GlowView.h"; sourceTree = "<group>"; };
+		F00712F022687785009C3D5F /* UIView+GlowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GlowView.m"; sourceTree = "<group>"; };
 		F01CB5C32265A77E00FA55BE /* NSString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
 		F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LabelWidthAndHeight.m"; sourceTree = "<group>"; };
 		F01CB5C92265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
@@ -427,6 +430,8 @@
 				F00712EA226870DE009C3D5F /* UIView+UserInteraction.m */,
 				F00712EC2268738E009C3D5F /* UIView+AnimationProperty.h */,
 				F00712ED2268738E009C3D5F /* UIView+AnimationProperty.m */,
+				F00712EF22687785009C3D5F /* UIView+GlowView.h */,
+				F00712F022687785009C3D5F /* UIView+GlowView.m */,
 			);
 			name = "UIView+Category";
 			sourceTree = "<group>";
@@ -529,6 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00712F122687785009C3D5F /* UIView+GlowView.m in Sources */,
 				F01CB5E1226706FF00FA55BE /* UIImage+SolidColor.m in Sources */,
 				F096067322601FA800740E18 /* GCDGroup.m in Sources */,
 				F096068C2260394600740E18 /* UIButton+Style.m in Sources */,
