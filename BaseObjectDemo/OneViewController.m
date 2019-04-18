@@ -71,12 +71,18 @@
 //    UIImageView *imgv = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"taidi.jpg"] scaleWithFixedHeight:200]];
     // 获取image的平均颜色 \ 混合一张image blendMode释义： https://blog.csdn.net/qq_14920635/article/details/75617188
     imgv.image = [[UIImage imageNamed:@"taidi.jpg"] blendImage:[UIImage imageNamed:@"xiaochai.jpg"] blendMode:kCGBlendModeNormal alpha:0.5];
+    // 只设置自身的blendMode 但是没感觉有啥区别
+//    imgv.image = [[UIImage imageNamed:@"taidi.jpg"] blendMode:kCGBlendModePlusLighter alpha:0.9];
 //    self.view.backgroundColor = imgv.image.averageColor;
     
 //    UIImageView *imgv1 = [[UIImageView alloc] initWithImage:[imgv.image croppedImageAtFrame:CGRectMake(100, 150, 50, 100)]];
 //
 //    UIImageView *imgv2 = [[UIImageView alloc] initWithImage:[UIImage imageWithSize:CGSizeMake(1, 1) color:[UIColor greenColor]]];
 //    imgv2.frame = CGRectMake(100, 200, 50, 50);
+    UIButton *btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn3.frame = CGRectMake(160, 80, 50, 50);
+    // 改变颜色
+    [btn3 setNormalImage:[[UIImage imageNamed:@"模特"] imageWithTintColor:[UIColor purpleColor]]];
     
     
     [self.view addSubview:imgv];
@@ -84,6 +90,7 @@
 //    [self.view addSubview:imgv2];
     [self.view addSubview:btn];
     [self.view addSubview:btn2];
+    [self.view addSubview:btn3];
     [self.view addSubview:label];
 }
 
