@@ -23,16 +23,24 @@
 #import "UIView+shake.h"
 #import "UIView+AnimationPracticalMethod.h"
 #import "UIView+DebugFrame.h"
+#import "LinearCarouseView.h"
+#import "UIView+SetRect.h"
 
-@interface OneViewController ()
+@interface OneViewController ()<iCarouselViewDelegate>
 @property (nonatomic, weak  ) UIButton *shakeBtn;
 @end
 
-@implementation OneViewController
+@implementation OneViewController {
+    LinearCarouseView *_lineCarouseView;
+}
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self.shakeBtn shake];
+    [_lineCarouseView reloadData];
+    [UIView animateWithDuration:0.5f animations:^{
+        self->_lineCarouseView.alpha   = 1.f;
+    }];
 }
 - (void)setupSubViews {
     self.view.backgroundColor = [UIColor redColor];
@@ -83,7 +91,7 @@
     // 根据指定的高度缩放image
 //    UIImageView *imgv = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"taidi.jpg"] scaleWithFixedHeight:200]];
     // 获取image的平均颜色 \ 混合一张image blendMode释义： https://blog.csdn.net/qq_14920635/article/details/75617188
-    imgv.image = [[UIImage imageNamed:@"taidi.jpg"] blendImage:[UIImage imageNamed:@"xiaochai.jpg"] blendMode:kCGBlendModeNormal alpha:0.5];
+    imgv.image = [[UIImage imageNamed:@"dog1.jpg"] blendImage:[UIImage imageNamed:@"dog2.jpg"] blendMode:kCGBlendModeNormal alpha:0.5];
     // 只设置自身的blendMode 但是没感觉有啥区别
 //    imgv.image = [[UIImage imageNamed:@"taidi.jpg"] blendMode:kCGBlendModePlusLighter alpha:0.9];
 //    self.view.backgroundColor = imgv.image.averageColor;
@@ -96,6 +104,14 @@
     btn3.frame = CGRectMake(160, 80, 50, 50);
     // 改变颜色
     [btn3 setNormalImage:[[UIImage imageNamed:@"模特"] imageWithTintColor:[UIColor purpleColor]]];
+    
+    _lineCarouseView          = [[LinearCarouseView alloc] initWithFrame:CGRectMake(0, 0, Width, self.view.height / 2.f - 40.f)];
+    _lineCarouseView.bottom   = self.view.bottom;
+    _lineCarouseView.delegate = self;
+    _lineCarouseView.alpha    = 0.f;
+    _lineCarouseView.adapters = @[[self iCarouselAdapterWithImageName:@"dog1.jpg"],
+                                  [self iCarouselAdapterWithImageName:@"dog2.jpg"]];
+    
     // 禁止掉btn2 的交互通过view的分类
 //    [btn2 disableUserInteraction];
     // 禁止self.view的交互
@@ -107,6 +123,7 @@
     [self.view addSubview:btn2];
     [self.view addSubview:btn3];
     [self.view addSubview:label];
+    [self.view addSubview:_lineCarouseView];
     // 添加辉光
     label.glowRadius            = @(2.f);
     label.glowOpacity           = @(0.75f);
@@ -118,6 +135,13 @@
     [label createGlowLayer];
     [label insertGlowLayer];
     [label startGlowLoop];
+}
+- (iCarouselAdapter *)iCarouselAdapterWithImageName:(NSString *)name {
+    
+    iCarouselAdapter *adapter = [iCarouselAdapter new];
+    adapter.data              = name;
+    
+    return adapter;
 }
 
 
