@@ -30,6 +30,14 @@
 		F007132E2269B99E009C3D5F /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = F007132D2269B99E009C3D5F /* File.m */; };
 		F00713312269BA63009C3D5F /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713302269BA63009C3D5F /* FileManager.m */; };
 		F00713332269BE50009C3D5F /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = F00713322269BE50009C3D5F /* bg1.png */; };
+		F00713382269CCE7009C3D5F /* AttributedStringConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713372269CCE7009C3D5F /* AttributedStringConfig.m */; };
+		F007133C2269CE18009C3D5F /* FontAttributeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F007133B2269CE18009C3D5F /* FontAttributeConfig.m */; };
+		F007133F2269CF67009C3D5F /* ForegroundColorAttributeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F007133E2269CF67009C3D5F /* ForegroundColorAttributeConfig.m */; };
+		F00713422269D01A009C3D5F /* ParagraphAttributeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713412269D01A009C3D5F /* ParagraphAttributeConfig.m */; };
+		F00713452269D0CC009C3D5F /* KernAttributeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713442269D0CC009C3D5F /* KernAttributeConfig.m */; };
+		F00713482269D12B009C3D5F /* NSAttributedString+AttributedStringConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713472269D12B009C3D5F /* NSAttributedString+AttributedStringConfig.m */; };
+		F007134B2269D30F009C3D5F /* NSMutableAttributedString+AttributedStringConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F007134A2269D30F009C3D5F /* NSMutableAttributedString+AttributedStringConfig.m */; };
+		F007134E2269D483009C3D5F /* NSString+AttributedStringConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F007134D2269D483009C3D5F /* NSString+AttributedStringConfig.m */; };
 		F01CB5C52265A77E00FA55BE /* NSString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */; };
 		F01CB5CB2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CA2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m */; };
 		F01CB5CE2265B45800FA55BE /* NSString+HexUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CD2265B45800FA55BE /* NSString+HexUnicode.m */; };
@@ -120,6 +128,23 @@
 		F007132F2269BA63009C3D5F /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
 		F00713302269BA63009C3D5F /* FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 		F00713322269BE50009C3D5F /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		F00713352269CCC2009C3D5F /* AttributedStringConfigHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedStringConfigHelper.h; sourceTree = "<group>"; };
+		F00713362269CCE7009C3D5F /* AttributedStringConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedStringConfig.h; sourceTree = "<group>"; };
+		F00713372269CCE7009C3D5F /* AttributedStringConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributedStringConfig.m; sourceTree = "<group>"; };
+		F007133A2269CE18009C3D5F /* FontAttributeConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAttributeConfig.h; sourceTree = "<group>"; };
+		F007133B2269CE18009C3D5F /* FontAttributeConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontAttributeConfig.m; sourceTree = "<group>"; };
+		F007133D2269CF67009C3D5F /* ForegroundColorAttributeConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForegroundColorAttributeConfig.h; sourceTree = "<group>"; };
+		F007133E2269CF67009C3D5F /* ForegroundColorAttributeConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForegroundColorAttributeConfig.m; sourceTree = "<group>"; };
+		F00713402269D01A009C3D5F /* ParagraphAttributeConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParagraphAttributeConfig.h; sourceTree = "<group>"; };
+		F00713412269D01A009C3D5F /* ParagraphAttributeConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParagraphAttributeConfig.m; sourceTree = "<group>"; };
+		F00713432269D0CC009C3D5F /* KernAttributeConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KernAttributeConfig.h; sourceTree = "<group>"; };
+		F00713442269D0CC009C3D5F /* KernAttributeConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KernAttributeConfig.m; sourceTree = "<group>"; };
+		F00713462269D12B009C3D5F /* NSAttributedString+AttributedStringConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+AttributedStringConfig.h"; sourceTree = "<group>"; };
+		F00713472269D12B009C3D5F /* NSAttributedString+AttributedStringConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+AttributedStringConfig.m"; sourceTree = "<group>"; };
+		F00713492269D30F009C3D5F /* NSMutableAttributedString+AttributedStringConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+AttributedStringConfig.h"; sourceTree = "<group>"; };
+		F007134A2269D30F009C3D5F /* NSMutableAttributedString+AttributedStringConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+AttributedStringConfig.m"; sourceTree = "<group>"; };
+		F007134C2269D483009C3D5F /* NSString+AttributedStringConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AttributedStringConfig.h"; sourceTree = "<group>"; };
+		F007134D2269D483009C3D5F /* NSString+AttributedStringConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AttributedStringConfig.m"; sourceTree = "<group>"; };
 		F01CB5C32265A77E00FA55BE /* NSString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
 		F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LabelWidthAndHeight.m"; sourceTree = "<group>"; };
 		F01CB5C92265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
@@ -313,6 +338,38 @@
 			name = FileManager;
 			sourceTree = "<group>";
 		};
+		F00713342269CC76009C3D5F /* AttributedStringConfig */ = {
+			isa = PBXGroup;
+			children = (
+				F00713352269CCC2009C3D5F /* AttributedStringConfigHelper.h */,
+				F00713362269CCE7009C3D5F /* AttributedStringConfig.h */,
+				F00713372269CCE7009C3D5F /* AttributedStringConfig.m */,
+				F00713392269CDC6009C3D5F /* ConcreteAttributeStringConfigs */,
+				F00713462269D12B009C3D5F /* NSAttributedString+AttributedStringConfig.h */,
+				F00713472269D12B009C3D5F /* NSAttributedString+AttributedStringConfig.m */,
+				F00713492269D30F009C3D5F /* NSMutableAttributedString+AttributedStringConfig.h */,
+				F007134A2269D30F009C3D5F /* NSMutableAttributedString+AttributedStringConfig.m */,
+				F007134C2269D483009C3D5F /* NSString+AttributedStringConfig.h */,
+				F007134D2269D483009C3D5F /* NSString+AttributedStringConfig.m */,
+			);
+			name = AttributedStringConfig;
+			sourceTree = "<group>";
+		};
+		F00713392269CDC6009C3D5F /* ConcreteAttributeStringConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				F007133A2269CE18009C3D5F /* FontAttributeConfig.h */,
+				F007133B2269CE18009C3D5F /* FontAttributeConfig.m */,
+				F007133D2269CF67009C3D5F /* ForegroundColorAttributeConfig.h */,
+				F007133E2269CF67009C3D5F /* ForegroundColorAttributeConfig.m */,
+				F00713402269D01A009C3D5F /* ParagraphAttributeConfig.h */,
+				F00713412269D01A009C3D5F /* ParagraphAttributeConfig.m */,
+				F00713432269D0CC009C3D5F /* KernAttributeConfig.h */,
+				F00713442269D0CC009C3D5F /* KernAttributeConfig.m */,
+			);
+			name = ConcreteAttributeStringConfigs;
+			sourceTree = "<group>";
+		};
 		F01CB5BF2265A6B700FA55BE /* NSString+Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,6 +489,7 @@
 		F096066222601F0000740E18 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				F00713342269CC76009C3D5F /* AttributedStringConfig */,
 				F007132B2269B96E009C3D5F /* FileManager */,
 				F00713202269B601009C3D5F /* IconMaker */,
 				F007131C2269A761009C3D5F /* DeviceInfo */,
@@ -709,11 +767,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F00712F122687785009C3D5F /* UIView+GlowView.m in Sources */,
+				F00713452269D0CC009C3D5F /* KernAttributeConfig.m in Sources */,
 				F00713262269B68E009C3D5F /* PNGManager.m in Sources */,
 				F01CB5E1226706FF00FA55BE /* UIImage+SolidColor.m in Sources */,
 				F007131222697778009C3D5F /* LinearCarouseView.m in Sources */,
 				F096067322601FA800740E18 /* GCDGroup.m in Sources */,
+				F00713482269D12B009C3D5F /* NSAttributedString+AttributedStringConfig.m in Sources */,
 				F096068C2260394600740E18 /* UIButton+Style.m in Sources */,
+				F007134E2269D483009C3D5F /* NSString+AttributedStringConfig.m in Sources */,
 				F0398CBA225F0E06009B668F /* main.m in Sources */,
 				F096068F22605B2400740E18 /* OneViewController.m in Sources */,
 				F00712EE2268738E009C3D5F /* UIView+AnimationProperty.m in Sources */,
@@ -721,15 +782,20 @@
 				F0960680226036F200740E18 /* ItemStyle.m in Sources */,
 				F09606A6226080C100740E18 /* UIAlertController+Constructor.m in Sources */,
 				F0398CCF225F144F009B668F /* CustomViewController.m in Sources */,
+				F007133C2269CE18009C3D5F /* FontAttributeConfig.m in Sources */,
 				F0398CC8225F10ED009B668F /* BaseCustomNavigationController.m in Sources */,
 				F00713232269B625009C3D5F /* PNG.m in Sources */,
 				F01CB5D12266CCF000FA55BE /* NSString+Range.m in Sources */,
+				F007133F2269CF67009C3D5F /* ForegroundColorAttributeConfig.m in Sources */,
 				F09606BD22609ADA00740E18 /* HexColors.m in Sources */,
+				F007134B2269D30F009C3D5F /* NSMutableAttributedString+AttributedStringConfig.m in Sources */,
 				F096067522601FA800740E18 /* GCDQueue.m in Sources */,
 				F096069E226067FD00740E18 /* CAShapeLayer+CornerRadius.m in Sources */,
+				F00713422269D01A009C3D5F /* ParagraphAttributeConfig.m in Sources */,
 				F00712EB226870DE009C3D5F /* UIView+UserInteraction.m in Sources */,
 				F09606B92260989000740E18 /* UIFont+Fonts.m in Sources */,
 				F007130F226973F1009C3D5F /* iCarouselAbsItemView.m in Sources */,
+				F00713382269CCE7009C3D5F /* AttributedStringConfig.m in Sources */,
 				F01CB5CB2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m in Sources */,
 				F00713312269BA63009C3D5F /* FileManager.m in Sources */,
 				F096069222605DB000740E18 /* btnitemStyle.m in Sources */,
