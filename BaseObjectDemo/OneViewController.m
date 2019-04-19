@@ -21,6 +21,7 @@
 #import "UIView+UserInteraction.h"
 #import "UIView+GlowView.h"
 #import "UIView+shake.h"
+#import "UIView+AnimationPracticalMethod.h"
 
 @interface OneViewController ()
 @property (nonatomic, weak  ) UIButton *shakeBtn;
@@ -44,6 +45,7 @@
         NSLog(@"我被点了");
         [button shake];
 //        [self.view shake];
+        [button alpha:.2 duration:.5 animated:YES];
     }];
     self.shakeBtn = btn;
     
