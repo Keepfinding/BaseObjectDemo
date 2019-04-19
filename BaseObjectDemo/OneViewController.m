@@ -20,13 +20,18 @@
 #import "UIImage+Blend.h"
 #import "UIView+UserInteraction.h"
 #import "UIView+GlowView.h"
+#import "UIView+shake.h"
 
 @interface OneViewController ()
-
+@property (nonatomic, weak  ) UIButton *shakeBtn;
 @end
 
 @implementation OneViewController
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.shakeBtn shake];
+}
 - (void)setupSubViews {
     self.view.backgroundColor = [UIColor redColor];
     
@@ -37,7 +42,10 @@
         [button setNormalTitleColor:[UIColor whiteColor]];
     } eventBlock:^(UIButton *button) {
         NSLog(@"我被点了");
+        [button shake];
+//        [self.view shake];
     }];
+    self.shakeBtn = btn;
     
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeSystem];
     [btn2 setNormalTitleColor:[UIColor blackColor]];
