@@ -22,6 +22,7 @@
 #import "UIView+GlowView.h"
 #import "UIView+shake.h"
 #import "UIView+AnimationPracticalMethod.h"
+#import "UIView+DebugFrame.h"
 
 @interface OneViewController ()
 @property (nonatomic, weak  ) UIButton *shakeBtn;
@@ -56,7 +57,7 @@
         NSLog(@"嗯，是你");
     }];
     btn2.frame = CGRectMake(50, 140, 200, 50);
-    
+    [btn2 showOutlineWithColor:[UIColor blueColor]];
     CAShapeLayer *cornerLayer = [CAShapeLayer shapeLayerWithFrame:CGRectMake(0, 0, 80, 50) corners:UIRectCornerTopLeft | UIRectCornerBottomRight radius:30];
     cornerLayer.fillColor = [UIColor greenColor].CGColor;
     [btn.layer insertSublayer:cornerLayer atIndex:0];

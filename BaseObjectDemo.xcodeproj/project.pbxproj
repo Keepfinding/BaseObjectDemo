@@ -15,6 +15,7 @@
 		F00712F7226964A2009C3D5F /* UIView+AnimationPracticalMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F00712F6226964A2009C3D5F /* UIView+AnimationPracticalMethod.m */; };
 		F00712FA22696897009C3D5F /* UIView+ConvenientMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F00712F922696897009C3D5F /* UIView+ConvenientMethod.m */; };
 		F00712FD22696946009C3D5F /* UIView+ConvertRect.m in Sources */ = {isa = PBXBuildFile; fileRef = F00712FC22696946009C3D5F /* UIView+ConvertRect.m */; };
+		F007130022696AA5009C3D5F /* UIView+DebugFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F00712FF22696AA5009C3D5F /* UIView+DebugFrame.m */; };
 		F01CB5C52265A77E00FA55BE /* NSString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */; };
 		F01CB5CB2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CA2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m */; };
 		F01CB5CE2265B45800FA55BE /* NSString+HexUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CD2265B45800FA55BE /* NSString+HexUnicode.m */; };
@@ -76,6 +77,8 @@
 		F00712F922696897009C3D5F /* UIView+ConvenientMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ConvenientMethod.m"; sourceTree = "<group>"; };
 		F00712FB22696946009C3D5F /* UIView+ConvertRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ConvertRect.h"; sourceTree = "<group>"; };
 		F00712FC22696946009C3D5F /* UIView+ConvertRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ConvertRect.m"; sourceTree = "<group>"; };
+		F00712FE22696AA5009C3D5F /* UIView+DebugFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DebugFrame.h"; sourceTree = "<group>"; };
+		F00712FF22696AA5009C3D5F /* UIView+DebugFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DebugFrame.m"; sourceTree = "<group>"; };
 		F01CB5C32265A77E00FA55BE /* NSString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
 		F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LabelWidthAndHeight.m"; sourceTree = "<group>"; };
 		F01CB5C92265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
@@ -452,6 +455,8 @@
 				F00712F922696897009C3D5F /* UIView+ConvenientMethod.m */,
 				F00712FB22696946009C3D5F /* UIView+ConvertRect.h */,
 				F00712FC22696946009C3D5F /* UIView+ConvertRect.m */,
+				F00712FE22696AA5009C3D5F /* UIView+DebugFrame.h */,
+				F00712FF22696AA5009C3D5F /* UIView+DebugFrame.m */,
 			);
 			name = "UIView+Category";
 			sourceTree = "<group>";
@@ -576,6 +581,7 @@
 				F096069222605DB000740E18 /* btnitemStyle.m in Sources */,
 				F00712F7226964A2009C3D5F /* UIView+AnimationPracticalMethod.m in Sources */,
 				F00712F422695AE0009C3D5F /* UIView+shake.m in Sources */,
+				F007130022696AA5009C3D5F /* UIView+DebugFrame.m in Sources */,
 				F09606C122609D3800740E18 /* UIColor+ForPublicUse.m in Sources */,
 				F096066722601F3A00740E18 /* AppleSystemService.m in Sources */,
 				F09606A222606E4C00740E18 /* UILabel+SizeToFit.m in Sources */,
