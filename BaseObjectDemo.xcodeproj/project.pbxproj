@@ -23,6 +23,7 @@
 		F007131222697778009C3D5F /* LinearCarouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F007131122697778009C3D5F /* LinearCarouseView.m */; };
 		F007131622698EF9009C3D5F /* LinearCarouseItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F007131522698EF9009C3D5F /* LinearCarouseItemView.m */; };
 		F007131B2269A597009C3D5F /* LinkInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F007131A2269A597009C3D5F /* LinkInfoModel.m */; };
+		F007131F2269A78B009C3D5F /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F007131E2269A78B009C3D5F /* DeviceInfo.m */; };
 		F01CB5C52265A77E00FA55BE /* NSString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */; };
 		F01CB5CB2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CA2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m */; };
 		F01CB5CE2265B45800FA55BE /* NSString+HexUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CD2265B45800FA55BE /* NSString+HexUnicode.m */; };
@@ -100,6 +101,8 @@
 		F007131522698EF9009C3D5F /* LinearCarouseItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearCarouseItemView.m; sourceTree = "<group>"; };
 		F00713192269A597009C3D5F /* LinkInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkInfoModel.h; sourceTree = "<group>"; };
 		F007131A2269A597009C3D5F /* LinkInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkInfoModel.m; sourceTree = "<group>"; };
+		F007131D2269A78B009C3D5F /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		F007131E2269A78B009C3D5F /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		F01CB5C32265A77E00FA55BE /* NSString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
 		F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LabelWidthAndHeight.m"; sourceTree = "<group>"; };
 		F01CB5C92265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
@@ -253,6 +256,15 @@
 			name = LinkInfoModel;
 			sourceTree = "<group>";
 		};
+		F007131C2269A761009C3D5F /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F007131D2269A78B009C3D5F /* DeviceInfo.h */,
+				F007131E2269A78B009C3D5F /* DeviceInfo.m */,
+			);
+			name = DeviceInfo;
+			sourceTree = "<group>";
+		};
 		F01CB5BF2265A6B700FA55BE /* NSString+Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +383,7 @@
 		F096066222601F0000740E18 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				F007131C2269A761009C3D5F /* DeviceInfo */,
 				F00713182269A556009C3D5F /* LinkInfoModel */,
 				F09606BA22609A9B00740E18 /* HexColor */,
 				F096067622602F5600740E18 /* runtime */,
@@ -689,6 +702,7 @@
 				F096068A2260394600740E18 /* UIButton+Event.m in Sources */,
 				F09606962260644600740E18 /* UIColor+RepresentInHex.m in Sources */,
 				F01CB5DA2266F08300FA55BE /* UIImage+ImageEffects.m in Sources */,
+				F007131F2269A78B009C3D5F /* DeviceInfo.m in Sources */,
 				F09606B5226096C200740E18 /* UIView+SetRect.m in Sources */,
 				F00712FD22696946009C3D5F /* UIView+ConvertRect.m in Sources */,
 				F007131B2269A597009C3D5F /* LinkInfoModel.m in Sources */,

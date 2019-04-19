@@ -25,6 +25,7 @@
 #import "UIView+DebugFrame.h"
 #import "LinearCarouseView.h"
 #import "UIView+SetRect.h"
+#import "DeviceInfo.h"
 
 @interface OneViewController ()<iCarouselViewDelegate>
 @property (nonatomic, weak  ) UIButton *shakeBtn;
@@ -41,6 +42,7 @@
     [UIView animateWithDuration:0.5f animations:^{
         self->_lineCarouseView.alpha   = 1.f;
     }];
+    NSLog(@"我%@刘海屏幕",DeviceInfo.isFringeScreen ? @"是" : @"不是");
 }
 - (void)setupSubViews {
     self.view.backgroundColor = [UIColor redColor];
