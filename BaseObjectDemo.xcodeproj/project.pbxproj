@@ -27,6 +27,9 @@
 		F00713232269B625009C3D5F /* PNG.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713222269B625009C3D5F /* PNG.m */; };
 		F00713262269B68E009C3D5F /* PNGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713252269B68E009C3D5F /* PNGManager.m */; };
 		F00713292269B7B1009C3D5F /* RegexManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713282269B7B1009C3D5F /* RegexManager.m */; };
+		F007132E2269B99E009C3D5F /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = F007132D2269B99E009C3D5F /* File.m */; };
+		F00713312269BA63009C3D5F /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713302269BA63009C3D5F /* FileManager.m */; };
+		F00713332269BE50009C3D5F /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = F00713322269BE50009C3D5F /* bg1.png */; };
 		F01CB5C52265A77E00FA55BE /* NSString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */; };
 		F01CB5CB2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CA2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m */; };
 		F01CB5CE2265B45800FA55BE /* NSString+HexUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = F01CB5CD2265B45800FA55BE /* NSString+HexUnicode.m */; };
@@ -112,6 +115,11 @@
 		F00713252269B68E009C3D5F /* PNGManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNGManager.m; sourceTree = "<group>"; };
 		F00713272269B7B1009C3D5F /* RegexManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegexManager.h; sourceTree = "<group>"; };
 		F00713282269B7B1009C3D5F /* RegexManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegexManager.m; sourceTree = "<group>"; };
+		F007132C2269B99E009C3D5F /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
+		F007132D2269B99E009C3D5F /* File.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
+		F007132F2269BA63009C3D5F /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		F00713302269BA63009C3D5F /* FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		F00713322269BE50009C3D5F /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
 		F01CB5C32265A77E00FA55BE /* NSString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
 		F01CB5C42265A77E00FA55BE /* NSString+LabelWidthAndHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LabelWidthAndHeight.m"; sourceTree = "<group>"; };
 		F01CB5C92265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+LabelWidthAndHeight.h"; sourceTree = "<group>"; };
@@ -294,6 +302,17 @@
 			name = RegexManager;
 			sourceTree = "<group>";
 		};
+		F007132B2269B96E009C3D5F /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				F007132C2269B99E009C3D5F /* File.h */,
+				F007132D2269B99E009C3D5F /* File.m */,
+				F007132F2269BA63009C3D5F /* FileManager.h */,
+				F00713302269BA63009C3D5F /* FileManager.m */,
+			);
+			name = FileManager;
+			sourceTree = "<group>";
+		};
 		F01CB5BF2265A6B700FA55BE /* NSString+Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +387,7 @@
 		F0398CC2225F0FD2009B668F /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				F00713322269BE50009C3D5F /* bg1.png */,
 				F01CB5DD2266F51100FA55BE /* dog1.jpg */,
 				F01CB5DB2266F50A00FA55BE /* dog2.jpg */,
 				F0398CB8225F0E06009B668F /* Info.plist */,
@@ -412,6 +432,7 @@
 		F096066222601F0000740E18 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				F007132B2269B96E009C3D5F /* FileManager */,
 				F00713202269B601009C3D5F /* IconMaker */,
 				F007131C2269A761009C3D5F /* DeviceInfo */,
 				F00713182269A556009C3D5F /* LinkInfoModel */,
@@ -676,6 +697,7 @@
 				F01CB5DE2266F51100FA55BE /* dog1.jpg in Resources */,
 				F0398CB4225F0E06009B668F /* Assets.xcassets in Resources */,
 				F01CB5DC2266F50A00FA55BE /* dog2.jpg in Resources */,
+				F00713332269BE50009C3D5F /* bg1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,6 +731,7 @@
 				F09606B92260989000740E18 /* UIFont+Fonts.m in Sources */,
 				F007130F226973F1009C3D5F /* iCarouselAbsItemView.m in Sources */,
 				F01CB5CB2265AE8600FA55BE /* NSAttributedString+LabelWidthAndHeight.m in Sources */,
+				F00713312269BA63009C3D5F /* FileManager.m in Sources */,
 				F096069222605DB000740E18 /* btnitemStyle.m in Sources */,
 				F00712F7226964A2009C3D5F /* UIView+AnimationPracticalMethod.m in Sources */,
 				F00712F422695AE0009C3D5F /* UIView+shake.m in Sources */,
@@ -742,6 +765,7 @@
 				F00713292269B7B1009C3D5F /* RegexManager.m in Sources */,
 				F01CB5C52265A77E00FA55BE /* NSString+LabelWidthAndHeight.m in Sources */,
 				F007130522696F70009C3D5F /* iCarousel.m in Sources */,
+				F007132E2269B99E009C3D5F /* File.m in Sources */,
 				F09606AD22608ABC00740E18 /* UIAlertAction+Constructor.m in Sources */,
 				F01CB5E42267099A00FA55BE /* UIImage+Blend.m in Sources */,
 			);
