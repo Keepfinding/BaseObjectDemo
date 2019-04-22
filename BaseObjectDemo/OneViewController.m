@@ -27,6 +27,7 @@
 #import "UIView+SetRect.h"
 #import "DeviceInfo.h"
 #import "PNGManager.h"
+#import "AttributedStringConfigHelper.h"
 
 @interface OneViewController ()<iCarouselViewDelegate>
 @property (nonatomic, weak  ) UIButton *shakeBtn;
@@ -118,6 +119,11 @@
     _lineCarouseView.adapters = @[[self iCarouselAdapterWithImageName:@"dog1.jpg"],
                                   [self iCarouselAdapterWithImageName:@"dog2.jpg"]];
     
+    UILabel *attriLabel = [UILabel new];
+    attriLabel.numberOfLines = 2;
+    attriLabel.frame = CGRectMake(50, 200, 250, 80);
+    attriLabel.attributedText = [self makeAString];
+    
     // 禁止掉btn2 的交互通过view的分类
 //    [btn2 disableUserInteraction];
     // 禁止self.view的交互
@@ -130,6 +136,7 @@
     [self.view addSubview:btn3];
     [self.view addSubview:label];
     [self.view addSubview:_lineCarouseView];
+    [self.view addSubview:attriLabel];
     // 添加辉光
     label.glowRadius            = @(2.f);
     label.glowOpacity           = @(0.75f);
@@ -150,5 +157,21 @@
     return adapter;
 }
 
+- (NSAttributedString *)makeAString {
 
+    NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
+//    paragraph.tailIndent  = -30;
+//    paragraph.lineSpacing = 30;
+//    paragraph.alignment = NSTextAlignmentCenter;
+//    paragraph.firstLineHeadIndent = 30;
+    paragraph.lineBreakMode = NSLineBreakByTruncatingTail;
+    NSMutableAttributedString *richString = [NSMutableAttributedString mutableAttributedStringWithString:@"测试富文本:就是可以分设置文字的颜色字体，一段文字可以很花哨" config:^(NSString *string, NSMutableArray<AttributedStringConfig *> *configs) {
+        [configs addObject:[FontAttributeConfig configWithFont:[UIFont systemFontOfSize:20] range:NSMakeRange(0, 5)]];
+        [configs addObject:[FontAttributeConfig configWithFont:[UIFont systemFontOfSize:16] range:NSMakeRange(5,string.length - 5)]];
+        [configs addObject:[ForegroundColorAttributeConfig configWithColor:[UIColor blueColor]range:NSMakeRange(0, 5)]];
+        [configs addObject:[ForegroundColorAttributeConfig configWithColor:[UIColor redColor]range:NSMakeRange(5,string.length - 5)]];
+        [configs addObject:[ParagraphAttributeConfig configWithParagraphStyle:paragraph range:NSMakeRange(0,string.length)]];
+    }];
+    return richString;
+}
 @end
