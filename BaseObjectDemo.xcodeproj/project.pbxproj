@@ -56,6 +56,7 @@
 		F0398CCB225F116C009B668F /* BaseCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0398CCA225F116C009B668F /* BaseCustomViewController.m */; };
 		F0398CCF225F144F009B668F /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0398CCE225F144F009B668F /* CustomViewController.m */; };
 		F07D9892226DA7A000F8F4AB /* BaseUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F07D9891226DA7A000F8F4AB /* BaseUserDefaults.m */; };
+		F07D9896226DA9FC00F8F4AB /* CalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F07D9895226DA9FC00F8F4AB /* CalendarEvent.m */; };
 		F096066722601F3A00740E18 /* AppleSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = F096066622601F3900740E18 /* AppleSystemService.m */; };
 		F096067222601FA800740E18 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F096066922601FA800740E18 /* GCDTimer.m */; };
 		F096067322601FA800740E18 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F096066A22601FA800740E18 /* GCDGroup.m */; };
@@ -179,6 +180,8 @@
 		F0398CCE225F144F009B668F /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		F07D9890226DA7A000F8F4AB /* BaseUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUserDefaults.h; sourceTree = "<group>"; };
 		F07D9891226DA7A000F8F4AB /* BaseUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseUserDefaults.m; sourceTree = "<group>"; };
+		F07D9894226DA9FC00F8F4AB /* CalendarEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarEvent.h; sourceTree = "<group>"; };
+		F07D9895226DA9FC00F8F4AB /* CalendarEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarEvent.m; sourceTree = "<group>"; };
 		F096066522601F3900740E18 /* AppleSystemService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleSystemService.h; sourceTree = "<group>"; };
 		F096066622601F3900740E18 /* AppleSystemService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleSystemService.m; sourceTree = "<group>"; };
 		F096066922601FA800740E18 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
@@ -498,9 +501,19 @@
 			name = UserDefaults;
 			sourceTree = "<group>";
 		};
+		F07D9893226DA9C500F8F4AB /* CalendarEvent */ = {
+			isa = PBXGroup;
+			children = (
+				F07D9894226DA9FC00F8F4AB /* CalendarEvent.h */,
+				F07D9895226DA9FC00F8F4AB /* CalendarEvent.m */,
+			);
+			name = CalendarEvent;
+			sourceTree = "<group>";
+		};
 		F096066222601F0000740E18 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				F07D9893226DA9C500F8F4AB /* CalendarEvent */,
 				F07D988F226DA74B00F8F4AB /* UserDefaults */,
 				F00713342269CC76009C3D5F /* AttributedStringConfig */,
 				F007132B2269B96E009C3D5F /* FileManager */,
@@ -829,6 +842,7 @@
 				F007130C22697370009C3D5F /* iCarouselAdapter.m in Sources */,
 				F0960682226036F200740E18 /* NSObject+PropertiesInfomation.m in Sources */,
 				F096069A2260655600740E18 /* UIViewController+Status.m in Sources */,
+				F07D9896226DA9FC00F8F4AB /* CalendarEvent.m in Sources */,
 				F0398CAC225F0E04009B668F /* AppDelegate.m in Sources */,
 				F096067422601FA800740E18 /* GCDSemaphore.m in Sources */,
 				F01CB5D62266D20800FA55BE /* CALayer+SetRect.m in Sources */,

@@ -28,6 +28,7 @@
 #import "DeviceInfo.h"
 #import "PNGManager.h"
 #import "AttributedStringConfigHelper.h"
+#import "CalendarEvent.h"
 
 @interface OneViewController ()<iCarouselViewDelegate>
 @property (nonatomic, weak  ) UIButton *shakeBtn;
@@ -57,6 +58,8 @@
         button.itemStyle = btnStyle;
         [button setNormalTitle:@"点我呀~"];
         [button setNormalTitleColor:[UIColor whiteColor]];
+        CalendarEvent *event = [CalendarEvent calendarEventWithEventTitle:@"测试日历事件" startDate:[NSDate dateWithTimeIntervalSinceNow:1000] endDate:[NSDate dateWithTimeIntervalSinceNow:1500]];
+        [event save];
     } eventBlock:^(UIButton *button) {
         NSLog(@"我被点了");
         [button shake];
