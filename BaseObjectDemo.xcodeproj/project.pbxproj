@@ -55,6 +55,7 @@
 		F0398CC8225F10ED009B668F /* BaseCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0398CC7225F10ED009B668F /* BaseCustomNavigationController.m */; };
 		F0398CCB225F116C009B668F /* BaseCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0398CCA225F116C009B668F /* BaseCustomViewController.m */; };
 		F0398CCF225F144F009B668F /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0398CCE225F144F009B668F /* CustomViewController.m */; };
+		F07D9892226DA7A000F8F4AB /* BaseUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F07D9891226DA7A000F8F4AB /* BaseUserDefaults.m */; };
 		F096066722601F3A00740E18 /* AppleSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = F096066622601F3900740E18 /* AppleSystemService.m */; };
 		F096067222601FA800740E18 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F096066922601FA800740E18 /* GCDTimer.m */; };
 		F096067322601FA800740E18 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F096066A22601FA800740E18 /* GCDGroup.m */; };
@@ -176,6 +177,8 @@
 		F0398CCA225F116C009B668F /* BaseCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCustomViewController.m; sourceTree = "<group>"; };
 		F0398CCD225F144F009B668F /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		F0398CCE225F144F009B668F /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		F07D9890226DA7A000F8F4AB /* BaseUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUserDefaults.h; sourceTree = "<group>"; };
+		F07D9891226DA7A000F8F4AB /* BaseUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseUserDefaults.m; sourceTree = "<group>"; };
 		F096066522601F3900740E18 /* AppleSystemService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleSystemService.h; sourceTree = "<group>"; };
 		F096066622601F3900740E18 /* AppleSystemService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleSystemService.m; sourceTree = "<group>"; };
 		F096066922601FA800740E18 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
@@ -486,9 +489,19 @@
 			name = BaseCustomControllers;
 			sourceTree = "<group>";
 		};
+		F07D988F226DA74B00F8F4AB /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				F07D9890226DA7A000F8F4AB /* BaseUserDefaults.h */,
+				F07D9891226DA7A000F8F4AB /* BaseUserDefaults.m */,
+			);
+			name = UserDefaults;
+			sourceTree = "<group>";
+		};
 		F096066222601F0000740E18 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				F07D988F226DA74B00F8F4AB /* UserDefaults */,
 				F00713342269CC76009C3D5F /* AttributedStringConfig */,
 				F007132B2269B96E009C3D5F /* FileManager */,
 				F00713202269B601009C3D5F /* IconMaker */,
@@ -787,6 +800,7 @@
 				F00713232269B625009C3D5F /* PNG.m in Sources */,
 				F01CB5D12266CCF000FA55BE /* NSString+Range.m in Sources */,
 				F007133F2269CF67009C3D5F /* ForegroundColorAttributeConfig.m in Sources */,
+				F07D9892226DA7A000F8F4AB /* BaseUserDefaults.m in Sources */,
 				F09606BD22609ADA00740E18 /* HexColors.m in Sources */,
 				F007134B2269D30F009C3D5F /* NSMutableAttributedString+AttributedStringConfig.m in Sources */,
 				F096067522601FA800740E18 /* GCDQueue.m in Sources */,
