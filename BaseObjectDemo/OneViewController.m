@@ -26,9 +26,9 @@
 #import "LinearCarouseView.h"
 #import "UIView+SetRect.h"
 #import "DeviceInfo.h"
-#import "PNGManager.h"
 #import "AttributedStringConfigHelper.h"
 #import "CalendarEvent.h"
+#import "QZGradientView.h"
 
 @interface OneViewController ()<iCarouselViewDelegate>
 @property (nonatomic, weak  ) UIButton *shakeBtn;
@@ -46,9 +46,6 @@
         self->_lineCarouseView.alpha   = 1.f;
     }];
     NSLog(@"我%@刘海屏幕",DeviceInfo.isFringeScreen ? @"是" : @"不是");
-    [PNGManager createPNGsWithSourceImage:[UIImage imageNamed:@"bg1.png"] pngsBlock:^(NSMutableArray<PNG *> *pngs) {
-        
-    }];
 }
 - (void)setupSubViews {
     self.view.backgroundColor = [UIColor redColor];
@@ -85,7 +82,11 @@
     [label sizeToFitWithText:@"会根据文字" config:^(UILabel * _Nonnull label) {
         label.textColor = [UIColor whiteColor];
     }];
-
+    QZGradientView *gradientView = [[QZGradientView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    gradientView.colors = @[[UIColor redColor],[UIColor blueColor]];
+//    gradientView.locations = @[@(0),@(0.5)];
+    gradientView.startPoint = CGPointMake(0, 0.0);
+    gradientView.endPoint   = CGPointMake(1, 0.0);
     // 添加一个imageView
     UIImageView *imgv = [[UIImageView alloc] initWithFrame:self.view.bounds];//CGRectMake(50, 100, 200, 300)];
     // 模糊处理
@@ -132,6 +133,7 @@
     // 禁止self.view的交互
 //    [self.view disableUserInteraction];
     [self.view addSubview:imgv];
+    [self.view addSubview:gradientView];
 //    [self.view addSubview:imgv1];
 //    [self.view addSubview:imgv2];
     [self.view addSubview:btn];

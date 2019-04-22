@@ -24,8 +24,6 @@
 		F007131622698EF9009C3D5F /* LinearCarouseItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F007131522698EF9009C3D5F /* LinearCarouseItemView.m */; };
 		F007131B2269A597009C3D5F /* LinkInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F007131A2269A597009C3D5F /* LinkInfoModel.m */; };
 		F007131F2269A78B009C3D5F /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F007131E2269A78B009C3D5F /* DeviceInfo.m */; };
-		F00713232269B625009C3D5F /* PNG.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713222269B625009C3D5F /* PNG.m */; };
-		F00713262269B68E009C3D5F /* PNGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713252269B68E009C3D5F /* PNGManager.m */; };
 		F00713292269B7B1009C3D5F /* RegexManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713282269B7B1009C3D5F /* RegexManager.m */; };
 		F007132E2269B99E009C3D5F /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = F007132D2269B99E009C3D5F /* File.m */; };
 		F00713312269BA63009C3D5F /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F00713302269BA63009C3D5F /* FileManager.m */; };
@@ -57,6 +55,7 @@
 		F0398CCF225F144F009B668F /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0398CCE225F144F009B668F /* CustomViewController.m */; };
 		F07D9892226DA7A000F8F4AB /* BaseUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F07D9891226DA7A000F8F4AB /* BaseUserDefaults.m */; };
 		F07D9896226DA9FC00F8F4AB /* CalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F07D9895226DA9FC00F8F4AB /* CalendarEvent.m */; };
+		F07D9988226DB8E900F8F4AB /* QZGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = F07D9987226DB8E900F8F4AB /* QZGradientView.m */; };
 		F096066722601F3A00740E18 /* AppleSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = F096066622601F3900740E18 /* AppleSystemService.m */; };
 		F096067222601FA800740E18 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F096066922601FA800740E18 /* GCDTimer.m */; };
 		F096067322601FA800740E18 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F096066A22601FA800740E18 /* GCDGroup.m */; };
@@ -119,10 +118,6 @@
 		F007131A2269A597009C3D5F /* LinkInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkInfoModel.m; sourceTree = "<group>"; };
 		F007131D2269A78B009C3D5F /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		F007131E2269A78B009C3D5F /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
-		F00713212269B625009C3D5F /* PNG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNG.h; sourceTree = "<group>"; };
-		F00713222269B625009C3D5F /* PNG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNG.m; sourceTree = "<group>"; };
-		F00713242269B68E009C3D5F /* PNGManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNGManager.h; sourceTree = "<group>"; };
-		F00713252269B68E009C3D5F /* PNGManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNGManager.m; sourceTree = "<group>"; };
 		F00713272269B7B1009C3D5F /* RegexManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegexManager.h; sourceTree = "<group>"; };
 		F00713282269B7B1009C3D5F /* RegexManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegexManager.m; sourceTree = "<group>"; };
 		F007132C2269B99E009C3D5F /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
@@ -182,6 +177,8 @@
 		F07D9891226DA7A000F8F4AB /* BaseUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseUserDefaults.m; sourceTree = "<group>"; };
 		F07D9894226DA9FC00F8F4AB /* CalendarEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarEvent.h; sourceTree = "<group>"; };
 		F07D9895226DA9FC00F8F4AB /* CalendarEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarEvent.m; sourceTree = "<group>"; };
+		F07D9986226DB8E900F8F4AB /* QZGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QZGradientView.h; sourceTree = "<group>"; };
+		F07D9987226DB8E900F8F4AB /* QZGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QZGradientView.m; sourceTree = "<group>"; };
 		F096066522601F3900740E18 /* AppleSystemService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleSystemService.h; sourceTree = "<group>"; };
 		F096066622601F3900740E18 /* AppleSystemService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleSystemService.m; sourceTree = "<group>"; };
 		F096066922601FA800740E18 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
@@ -272,6 +269,7 @@
 		F007130622697062009C3D5F /* 子类 */ = {
 			isa = PBXGroup;
 			children = (
+				F07D9985226DB89C00F8F4AB /* QZGradientView */,
 				F007130122696E9D009C3D5F /* iCarouselView */,
 			);
 			name = "子类";
@@ -286,13 +284,6 @@
 				F007131522698EF9009C3D5F /* LinearCarouseItemView.m */,
 			);
 			name = "线性轮播";
-			sourceTree = "<group>";
-		};
-		F00713172269A157009C3D5F /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 		F00713182269A556009C3D5F /* LinkInfoModel */ = {
@@ -311,17 +302,6 @@
 				F007131E2269A78B009C3D5F /* DeviceInfo.m */,
 			);
 			name = DeviceInfo;
-			sourceTree = "<group>";
-		};
-		F00713202269B601009C3D5F /* IconMaker */ = {
-			isa = PBXGroup;
-			children = (
-				F00713212269B625009C3D5F /* PNG.h */,
-				F00713222269B625009C3D5F /* PNG.m */,
-				F00713242269B68E009C3D5F /* PNGManager.h */,
-				F00713252269B68E009C3D5F /* PNGManager.m */,
-			);
-			name = IconMaker;
 			sourceTree = "<group>";
 		};
 		F007132A2269B7B9009C3D5F /* RegexManager */ = {
@@ -510,6 +490,15 @@
 			name = CalendarEvent;
 			sourceTree = "<group>";
 		};
+		F07D9985226DB89C00F8F4AB /* QZGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				F07D9986226DB8E900F8F4AB /* QZGradientView.h */,
+				F07D9987226DB8E900F8F4AB /* QZGradientView.m */,
+			);
+			name = QZGradientView;
+			sourceTree = "<group>";
+		};
 		F096066222601F0000740E18 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,7 +506,6 @@
 				F07D988F226DA74B00F8F4AB /* UserDefaults */,
 				F00713342269CC76009C3D5F /* AttributedStringConfig */,
 				F007132B2269B96E009C3D5F /* FileManager */,
-				F00713202269B601009C3D5F /* IconMaker */,
 				F007131C2269A761009C3D5F /* DeviceInfo */,
 				F00713182269A556009C3D5F /* LinkInfoModel */,
 				F09606BA22609A9B00740E18 /* HexColor */,
@@ -532,7 +520,6 @@
 		F096066322601F0F00740E18 /* 分类 */ = {
 			isa = PBXGroup;
 			children = (
-				F00713172269A157009C3D5F /* New Group */,
 				F01CB5D72266F04700FA55BE /* UIImage+Category */,
 				F01CB5D32266D1E400FA55BE /* CALayer+Category */,
 				F01CB5BF2265A6B700FA55BE /* NSString+Category */,
@@ -794,7 +781,6 @@
 			files = (
 				F00712F122687785009C3D5F /* UIView+GlowView.m in Sources */,
 				F00713452269D0CC009C3D5F /* KernAttributeConfig.m in Sources */,
-				F00713262269B68E009C3D5F /* PNGManager.m in Sources */,
 				F01CB5E1226706FF00FA55BE /* UIImage+SolidColor.m in Sources */,
 				F007131222697778009C3D5F /* LinearCarouseView.m in Sources */,
 				F096067322601FA800740E18 /* GCDGroup.m in Sources */,
@@ -810,7 +796,6 @@
 				F0398CCF225F144F009B668F /* CustomViewController.m in Sources */,
 				F007133C2269CE18009C3D5F /* FontAttributeConfig.m in Sources */,
 				F0398CC8225F10ED009B668F /* BaseCustomNavigationController.m in Sources */,
-				F00713232269B625009C3D5F /* PNG.m in Sources */,
 				F01CB5D12266CCF000FA55BE /* NSString+Range.m in Sources */,
 				F007133F2269CF67009C3D5F /* ForegroundColorAttributeConfig.m in Sources */,
 				F07D9892226DA7A000F8F4AB /* BaseUserDefaults.m in Sources */,
@@ -853,6 +838,7 @@
 				F09606962260644600740E18 /* UIColor+RepresentInHex.m in Sources */,
 				F01CB5DA2266F08300FA55BE /* UIImage+ImageEffects.m in Sources */,
 				F007131F2269A78B009C3D5F /* DeviceInfo.m in Sources */,
+				F07D9988226DB8E900F8F4AB /* QZGradientView.m in Sources */,
 				F09606B5226096C200740E18 /* UIView+SetRect.m in Sources */,
 				F00712FD22696946009C3D5F /* UIView+ConvertRect.m in Sources */,
 				F007131B2269A597009C3D5F /* LinkInfoModel.m in Sources */,
